@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* 폰트 적용 */
+@import "reset.css";
+
+#box{
+    width: 100%;
+    background-color: #eee;
+    padding: 200px 0 150px;
+}
+#box .inner{
+    width: 1180px;
+    margin: 0 auto;
+    /* border: 1px solid #000; */
+}
+/*
+1180 
+580 
+380 
+280 
+*/
+
+#box .inner h1{
+    font: bold 22px/1 "arial";
+    color: #555;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#box .inner>h2{
+    font: normal 16px/1 "arial";
+    color: #777;
+    text-align: center;
+    margin-bottom: 80px;
+}
+#box .inner .wrap{
+    width: 100%;
+}
+#box .inner .wrap::after{
+    /* 지우기 */
+    content: '';
+    display: block;
+    clear: both;
+}
+#box .inner .wrap article{
+    width: 280px;
+    float: left;
+    /* background-color: skyblue; */
+    margin-right: 20px;
+}
+#box .inner .wrap article:last-child{
+    margin-right: 0px;
+}
+
+#box .inner .wrap article .pic{
+    width: 100%;
+    height: 120px;
+    background-color: #555;
+    margin-bottom: 20px;
+}
+
+#box .inner .wrap article>h2{
+    font: blod 16px/1 "arial";
+    color: black;
+    text-align: center;
+    /* right left도 사용 가능 */
+    margin-bottom: 10px;
+}
+
+#box .inner .wrap article>p{
+    font: 14px/1.2 "arial";
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#box .inner .wrap article>a{
+    font: bold 12px/1 "arial";
+    color: #333;
+    border: 1px solid #888;
+    display: inline-block;
+    /* 영역보다 튀어 나가기때문에, 과제를 할때는 버튼 위치를 왼쪾에서 오른쪽으로 옮기기 */
+    padding: 5px 20px;
+}
+
+
